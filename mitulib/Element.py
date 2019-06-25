@@ -1,8 +1,3 @@
-"""
-所有元素的父类
-"""
-
-
 class Element:
     DEFAULTMAP_KEY = "defaultMap"
     SELFMAP_KEY = "selfMap"
@@ -10,6 +5,10 @@ class Element:
     UUID = "uuid"
 
     def __init__(self, type_name: str):
+        """
+        所有元素的父类
+        :param type_name: 类型名称
+        """
         self.type_name = type_name
         self._index = -1
 

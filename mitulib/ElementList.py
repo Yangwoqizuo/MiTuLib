@@ -1,11 +1,10 @@
-"""
-容纳元素的数组
-"""
-
-
 class ElementList:
 
     def __init__(self, initial_elements: list = None):
+        """
+        容纳元素的数组
+        :param initial_elements:
+        """
         self.elements = []
         if initial_elements:
             self.elements.extend(initial_elements)

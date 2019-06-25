@@ -1,6 +1,6 @@
 from mitulib import *
 
-half_beat = 0.25
+half_beat = 0.3
 elements = [BeginElement(BeginElement.MODE_FREE),
             # 第一行
             DeltaTimeElement(half_beat * 2),

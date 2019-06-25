@@ -7,6 +7,10 @@ from Element import Element
 
 class LoopElement(ElementWithChild):
     def __init__(self, loop_body: list = None):
+        """
+        循环元素
+        :param loop_body:
+        """
         super(LoopElement, self).__init__("LoopE", loop_body, None)
 
     def to_dict(self):

@@ -10,6 +10,11 @@ class VarAssignmentElement(Element):
     VALUE_KEY = "VarAssValue"
 
     def __init__(self, key: str, value: str):
+        """
+        定义变量元素
+        :param key: 变量名称
+        :param value: 值
+        """
         super(VarAssignmentElement, self).__init__("VarAssignmentE")
         self.key = key
         self.value = value

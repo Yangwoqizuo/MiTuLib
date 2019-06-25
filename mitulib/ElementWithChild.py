@@ -1,12 +1,15 @@
-"""
-拥有子元素的元素，例如循环、分支
-"""
 from Element import Element
 from ElementList import ElementList
 
 
 class ElementWithChild(Element):
     def __init__(self, name: str, child1: list = None, child2: list = None):
+        """
+        拥有子元素的元素，例如循环、分支
+        :param name: 名称
+        :param child1: 子列表1
+        :param child2: 子列表2
+        """
         super(ElementWithChild, self).__init__(name)
         if child1:
             self.child1 = ElementList(child1)
