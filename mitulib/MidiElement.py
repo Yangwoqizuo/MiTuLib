@@ -10,7 +10,7 @@ class MidiElement(Element):
         :param tone: 声调，0-20
         :param time: 通道
         """
-        super(MidiElement, self).__init__("MiDiE")
+        super(MidiElement, self).__init__("MidiE")
         self.type = instrument_type
         self.tone = tone
         self.time = time
