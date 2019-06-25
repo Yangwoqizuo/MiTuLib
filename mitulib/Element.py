@@ -6,6 +6,7 @@
 class Element:
     DEFAULTMAP_KEY = "defaultMap"
     SELFMAP_KEY = "selfMap"
+    CHANGEMAP_KEY = "changeMap"
     UUID = "uuid"
 
     def __init__(self, type_name: str):

@@ -9,7 +9,7 @@ class VarAssignmentElement(Element):
     VAR_KEY = "VarAssVar"
     VALUE_KEY = "VarAssValue"
 
-    def __init__(self, key: str, value: int):
+    def __init__(self, key: str, value: str):
         super(VarAssignmentElement, self).__init__("VarAssignmentE")
         self.key = key
         self.value = value

@@ -16,12 +16,12 @@ class ElementWithChild(Element):
     def add_into_list(self, target: list):
         index = super().add_into_list(target)
         self_index = index[0]
-        if self.child1:
+        if hasattr(self, "child1"):
             child1_index = len(target)
             self.child1.add_into_list(target)
             target[self_index]["centerE1"] = child1_index
             target[child1_index]["proCE1"] = self_index
-        if self.child2:
+        if hasattr(self, "child2"):
             child2_index = len(target)
             self.child2.add_into_list(target)
             target[self_index]["centerE2"] = child2_index
