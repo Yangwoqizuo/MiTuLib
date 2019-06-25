@@ -21,12 +21,10 @@ class ElementWithChild(Element):
         self_index = index[0]
         if hasattr(self, "child1"):
             child1_index = len(target)
-            self.child1.add_into_list(target)
+            self.child1.add_into_list(target, proce1=self_index)
             target[self_index]["centerE1"] = child1_index
-            target[child1_index]["proCE1"] = self_index
         if hasattr(self, "child2"):
             child2_index = len(target)
-            self.child2.add_into_list(target)
+            self.child2.add_into_list(target, proce2=self_index)
             target[self_index]["centerE2"] = child2_index
-            target[child2_index]["proCE2"] = self_index
         return index

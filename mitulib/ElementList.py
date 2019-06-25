@@ -1,5 +1,4 @@
 class ElementList:
-
     def __init__(self, initial_elements: list = None):
         """
         容纳元素的数组
@@ -9,7 +8,7 @@ class ElementList:
         if initial_elements:
             self.elements.extend(initial_elements)
 
-    def add_into_list(self, target: list):
+    def add_into_list(self, target: list, proce1=None, proce2=None):
         indexes = []
         for i in range(len(self.elements)):
             element_indexes = self.elements[i].add_into_list(target)
@@ -20,3 +19,7 @@ class ElementList:
                 element["nextE"] = indexes[i + 1]
             if i > 0:
                 element["proE"] = indexes[i - 1]
+            if proce1:
+                element["proCE1"] = proce1
+            if proce2:
+                element["proCE2"] = proce2
