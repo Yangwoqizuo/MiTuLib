@@ -12,15 +12,12 @@ class ElementList:
 
     def add_into_list(self, target: list):
         indexes = []
-        elements = []
         for i in range(len(self.elements)):
-            index = len(target)
-            indexes.append(index)
-            self.elements[i].add_into_list(target)
-            elements.append(target[index])
-        for i in range(len(elements)):
-            element = elements[i]
-            if i < len(elements) - 1:
+            element_indexes = self.elements[i].add_into_list(target)
+            indexes.extend(element_indexes)
+        for i in range(len(indexes)):
+            element = target[indexes[i]]
+            if i < len(indexes) - 1:
                 element["nextE"] = indexes[i + 1]
             if i > 0:
                 element["proE"] = indexes[i - 1]

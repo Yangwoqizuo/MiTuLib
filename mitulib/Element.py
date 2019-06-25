@@ -20,9 +20,12 @@ class Element:
         result = {'typeName': self.type_name}
         return result
 
-    def add_into_list(self, target):
+    def add_into_list(self, target: list):
         """
         把自己和下属元素加入target
         :param target: 目标数组
+        :return: 当前元素所在下标（有的元素插入不只一次，比如Loop）
         """
+        index = len(target)
         target.append(self.to_dict())
+        return [index]

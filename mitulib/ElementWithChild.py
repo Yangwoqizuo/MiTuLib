@@ -14,8 +14,8 @@ class ElementWithChild(Element):
             self.child2 = ElementList(child2)
 
     def add_into_list(self, target: list):
-        self_index = len(target)
-        super().add_into_list(target)
+        index = super().add_into_list(target)
+        self_index = index[0]
         if self.child1:
             child1_index = len(target)
             self.child1.add_into_list(target)
@@ -26,3 +26,4 @@ class ElementWithChild(Element):
             self.child2.add_into_list(target)
             target[self_index]["centerE2"] = child2_index
             target[child2_index]["proCE2"] = self_index
+        return index
