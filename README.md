@@ -11,7 +11,7 @@
 我们需要使用ADB从手机中存取积木机器人APP的数据库文件  
 [下载地址](https://developer.android.google.cn/studio/releases/platform-tools.html#downloads)
 * SQLite3  
-用于读写数据库
+用于读写数据库，上一步下载的platform-tools中有
 * SQLite3查看工具（可选）  
 用于查看APP已经存储的数据，如果你找到的工具可以编辑数据库，就可以忽略上一步。
 
