@@ -1,5 +1,5 @@
-from Element import Element
-from ElementList import ElementList
+from .Element import Element
+from .ElementList import ElementList
 
 
 class ElementWithChild(Element):

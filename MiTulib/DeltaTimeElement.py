@@ -1,4 +1,4 @@
-from Element import Element
+from .Element import Element
 
 
 class DeltaTimeElement(Element):

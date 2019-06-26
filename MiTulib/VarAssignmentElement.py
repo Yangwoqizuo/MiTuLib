@@ -2,7 +2,7 @@
 元素
 A=1
 """
-from Element import Element
+from .Element import Element
 
 
 class VarAssignmentElement(Element):

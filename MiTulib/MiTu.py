@@ -1,5 +1,5 @@
 import json
-from ElementList import ElementList
+from .ElementList import ElementList
 
 
 def make(element_list):

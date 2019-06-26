@@ -1,4 +1,4 @@
-from mitulib import *
+from MiTulib import *
 
 half_beat = 0.3
 elements = [BeginElement(BeginElement.MODE_FREE),
@@ -98,7 +98,7 @@ elements = [BeginElement(BeginElement.MODE_FREE),
             DeltaTimeElement(half_beat),
             ]
 
-order = Mitu.make(elements)
+order = MiTu.make(elements)
 id_in_database = 27
 
 sql = "update `ArchiveTable` set `ArchiveJSON` = '" + order + "' where ArchiveID = " + str(id_in_database) + ";"

@@ -1,4 +1,4 @@
-from mitulib import *
+from MiTulib import *
 
 half_beat = 0.3
 tones = [9, 11,  14, 9, 11, 14, 9, 10,
@@ -13,7 +13,7 @@ elements = [BeginElement(BeginElement.MODE_FREE),
             LoopElement(toneElements),
             ]
 
-order = Mitu.make(elements)
+order = MiTu.make(elements)
 id_in_database = 28
 
 sql = "update `ArchiveTable` set `ArchiveJSON` = '" + order + "' where ArchiveID = " + str(id_in_database) + ";"

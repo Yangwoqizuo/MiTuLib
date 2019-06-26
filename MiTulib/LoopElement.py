@@ -1,9 +1,8 @@
 """
 if
 """
-from ElementWithChild import ElementWithChild
-from Element import Element
-
+from .ElementWithChild import ElementWithChild
+from .Element import Element
 
 class LoopElement(ElementWithChild):
     def __init__(self, loop_body: list = None):

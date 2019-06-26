@@ -1,6 +1,6 @@
-from mitulib import *
+from MiTulib import *
 
-order = Mitu.make([BeginElement(BeginElement.MODE_FREE),
+order = MiTu.make([BeginElement(BeginElement.MODE_FREE),
                    IfElement("A", "==", "1",
                              then_do=[VarAssignmentElement("A", 1)],
                              else_do=[VarAssignmentElement("B", 2)]),

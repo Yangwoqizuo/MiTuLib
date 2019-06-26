@@ -1,7 +1,7 @@
 """
 if
 """
-from ElementWithChild import ElementWithChild
+from .ElementWithChild import ElementWithChild
 
 
 class IfElement(ElementWithChild):
