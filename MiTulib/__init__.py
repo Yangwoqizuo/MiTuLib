@@ -6,3 +6,6 @@ from .MidiElement import MidiElement
 from .DeltaTimeElement import DeltaTimeElement
 from .LoopElement import LoopElement
 from .MusicElement import MusicElement
+from .PercussionElement import PercussionElement
+from .MidiChordEelment import MidiChordElement
+from .EMTimeElement import EMTimeElement
