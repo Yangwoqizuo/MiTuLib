@@ -15,9 +15,11 @@ class MidiElement(Element):
         self.tone = tone
         self.time = time
 
+    def on_get_changable_variables(self):
+        return {"MidiTime": self.time}
+
     def to_dict(self):
         result = super().to_dict()
-        result[Element.DEFAULTMAP_KEY] = {"MidiTime": str(self.time)}
         result[Element.SELFMAP_KEY] = {
             "midiType": str(self.tone),
             "midiTypeType": str(self.type)

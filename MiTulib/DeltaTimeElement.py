@@ -11,11 +11,11 @@ class DeltaTimeElement(Element):
         super(DeltaTimeElement, self).__init__("DeltaTimeE")
         self.time = time
 
+    def on_get_changable_variables(self):
+        return {
+            "time": self.time
+        }
+
     def to_dict(self):
         result = super().to_dict()
-        if isinstance(self.time, str):
-            result[Element.DEFAULTMAP_KEY] = {"time": "0"}
-            result[Element.CHANGEMAP_KEY] = {"time": {"typeName": "VariableE", "defaultMap": {"Variable": self.time}}}
-        else:
-            result[Element.DEFAULTMAP_KEY] = {"time": str(self.time)}
         return result
